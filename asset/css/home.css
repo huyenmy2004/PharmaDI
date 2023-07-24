@@ -1,0 +1,117 @@
+body{
+    font-family: "roboto",sans-ser;
+    color: #505050;
+}
+button:hover{
+    cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.home-banner{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.home-sale {
+    display: flex;
+    width: 100%;
+    /* padding: 0 50px; */
+}
+.home-sale-left {
+    display: flex;
+    width: 55%;
+    padding: 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    position: relative;
+    margin: 20px;
+}
+.prod-image {
+    display: flex;
+    width: 60%;
+    height: max-content;
+    >img {
+        width: 400px;
+        height: auto;
+    }
+}
+.prod-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    >form{
+        >button{
+            padding: 10px 16px;
+            border-radius: 6px;
+            background-color: #0071AF;
+            border: transparent;
+            font-size: 12px;
+            color: white;
+            width: 300px;
+            margin: 10px 0;
+        }
+    }
+}
+.prod-detail {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.prod-cate {
+    padding: 5px 10px;
+    background-color: #EFFAFF;
+    font-size: 12px;
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 20px ;
+}
+.price-sale{
+    padding-top: 5px;
+    font-size: 24px;
+    color: #0071AF;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.price-orgin{
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.plus-number{
+    display: flex;
+    margin: 0 0 5px 0;
+    >button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #d8d8d8;
+        background-color: transparent;
+        width: 40px;
+    }
+    >input{
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        outline: 0;
+        border-left: 0;
+        border-right: 0;
+        width: 80px;
+        padding: 5px;
+    }
+}
+.home-sale-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 0 30px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    margin: 20px;
+}
+.home-sale-right-prod{
+    padding-bottom: 20px;
+}
+.title-lowercase{
+    padding: 15px 0;
+}
