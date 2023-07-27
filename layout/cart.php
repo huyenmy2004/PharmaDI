@@ -1,0 +1,184 @@
+<!-- MENU  -->
+<?php require "../component/header.php"; ?>
+
+<head>
+    <title>Giỏ hàng</title>
+    <style>
+        .cart {
+            display: flex;
+            margin: 30px 80px;
+            color: #505050;
+        }
+
+        .cart-list-prod {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+        }
+
+        .title {
+            padding: 10px 0 10px 0px;
+            font-weight: 600;
+            color: #0071AF;
+            font-size: 18px;
+        }
+
+        .cart-list-prod-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >div {
+                >button {
+                    padding: 5px 15px;
+                    border: 1px solid #D8D8D8;
+                    border-radius: 30px;
+                    background-color: #F9F9F9;
+                    font-size: 14px;
+                    color: #505050;
+                }
+            }
+        }
+
+        .select-all {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            >span {
+                padding: 0 10px 0
+            }
+        }
+
+        .cart-list-prod-list-brand {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            >img{
+                width: 100px;
+                height: max-content;
+            }
+        }
+
+        .cart-list-prod-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart-list-prod-list-prod {
+            display: flex;
+        }
+
+        .cart-transaction {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            margin-left: 50px;
+
+            >button {
+                width: 100%;
+                border-radius: 30px;
+                background-color: #0071AF;
+                border: none;
+                padding: 8px 0;
+                color: white;
+                margin: 15px 0;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cart">
+        <div class="cart-list-prod">
+            <div class="cart-list-prod-title">
+                <span class="title">GIỎ HÀNG</span>
+                <div style="display: flex; ">
+                    <button>Xoá tất cả</button>
+                    <div class="select-all">
+                        <span>Chọn tất cả</span>
+                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="1" width="14" height="14" rx="2.5" stroke="#D8D8D8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-list-prod-list">
+                <div class="cart-list-prod-list-brand">
+                    <img src="../asset/image/logo.png" alt="brand">
+                    <button>Xoá tất cả</button>
+                    <div class="select-all">
+                        <span>Chọn tất cả</span>
+                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="1" width="14" height="14" rx="2.5" stroke="#D8D8D8" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="cart-list-prod-list-prod">
+                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="1" width="14" height="14" rx="2.5" stroke="#D8D8D8" />
+                    </svg>
+                    <?php require "../component/product.php"; ?>
+                    <form action="">
+                        <div class="plus-number">
+                            <button>
+                                <svg width="11" height="3" viewBox="0 0 11 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 1.62295C11 2.49263 10.4317 2.67285 9.73077 2.67285L1.26923 2.67227C0.568254 2.67227 1.50475e-08 2.49215 8.74709e-08 1.62247C1.59894e-07 0.752783 0.568255 0.572645 1.26923 0.572645L9.73077 0.572646C10.4317 0.572646 11 0.753261 11 1.62295Z"
+                                        fill="#505050" />
+                                </svg>
+                            </button>
+                            <input type="number">
+                            <button>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.99942 0.323242C6.82784 0.323242 6.99951 0.919798 6.99951 1.65569L6.99896 10.5386C6.99896 11.2745 6.82739 11.8711 5.99896 11.8711C5.17053 11.8711 4.99894 11.2745 4.99894 10.5386L4.99894 1.65569C4.99894 0.919798 5.17099 0.323242 5.99942 0.323242Z"
+                                        fill="#505050" />
+                                    <path
+                                        d="M11.499 6.09658C11.499 6.96627 10.9308 7.14648 10.2298 7.14648L1.76825 7.14591C1.06728 7.14591 0.499023 6.96579 0.499024 6.0961C0.499024 5.22642 1.06728 5.04628 1.76825 5.04628L10.2298 5.04628C10.9308 5.04628 11.499 5.22689 11.499 6.09658Z"
+                                        fill="#505050" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <span>99.000đ</span>
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.2309 3.04162C6.4886 2.31253 7.18396 1.79167 7.99937 1.79167C8.81479 1.79167 9.51015 2.31253 9.76785 3.04162C9.88287 3.36706 10.24 3.53764 10.5654 3.42261C10.8908 3.30758 11.0614 2.95051 10.9464 2.62506C10.5177 1.41216 9.361 0.541672 7.99937 0.541672C6.63775 0.541672 5.48105 1.41216 5.05235 2.62506C4.93733 2.95051 5.1079 3.30758 5.43335 3.42261C5.7588 3.53764 6.11588 3.36706 6.2309 3.04162Z"
+                            fill="#505050" />
+                        <path
+                            d="M0.291016 4.50001C0.291016 4.15483 0.570838 3.87501 0.916016 3.87501H15.0828C15.4279 3.87501 15.7078 4.15483 15.7078 4.50001C15.7078 4.84518 15.4279 5.12501 15.0828 5.12501H0.916016C0.570838 5.12501 0.291016 4.84518 0.291016 4.50001Z"
+                            fill="#505050" />
+                        <path
+                            d="M2.2634 5.95972C2.60781 5.93676 2.90563 6.19735 2.92859 6.54176L3.31187 12.291C3.38675 13.4142 3.44011 14.1958 3.55725 14.7838C3.67087 15.3541 3.82948 15.6561 4.05733 15.8692C4.28517 16.0824 4.59697 16.2206 5.17364 16.296C5.76814 16.3738 6.55148 16.375 7.67718 16.375H8.32165C9.44735 16.375 10.2307 16.3738 10.8252 16.296C11.4019 16.2206 11.7137 16.0824 11.9415 15.8692C12.1693 15.6561 12.328 15.3541 12.4416 14.7838C12.5587 14.1958 12.6121 13.4142 12.687 12.291L13.0702 6.54176C13.0932 6.19735 13.391 5.93676 13.7354 5.95972C14.0798 5.98268 14.3404 6.2805 14.3175 6.62491L13.9313 12.418C13.86 13.487 13.8025 14.3504 13.6675 15.028C13.5272 15.7324 13.2885 16.3208 12.7955 16.782C12.3025 17.2432 11.6995 17.4423 10.9873 17.5354C10.3023 17.625 9.43692 17.625 8.3656 17.625H7.63323C6.56191 17.625 5.69654 17.625 5.01151 17.5354C4.2993 17.4423 3.69634 17.2432 3.20335 16.782C2.71035 16.3208 2.47167 15.7324 2.33134 15.028C2.19636 14.3504 2.13881 13.487 2.06756 12.418L1.68135 6.62491C1.65839 6.2805 1.91898 5.98268 2.2634 5.95972Z"
+                            fill="#505050" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="cart-transaction">
+            <span class="title">THÔNG TIN THANH TOÁN</span>
+            <div
+                style="border: 1px solid #D8D8D8; background-color: white; padding: 15px; border-radius: 8px; margin-top: 5px">
+                <div style="display: flex; justify-content: space-between; font-size: 14px; padding-bottom: 10px">
+                    <span>Số lượng</span>
+                    <span>09 sản phẩm</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 14px; ">
+                    <span>Thành tiền</span>
+                    <span style="font-size: 16px; color: #0071AF; font-weight: 600">3.000.000đ</span>
+                </div>
+            </div>
+            <textarea
+                style="border: 1px solid #D8D8D8; background-color: white; padding: 15px; border-radius: 8px; margin-top: 15px;"
+                name="" id="" cols="30" rows="5" style="height: 20px; max-width: 100%; min-width:100%"
+                placeholder="Nhập ghi chú..."></textarea>
+            <button>Xác nhận đặt hàng</button>
+        </div>
+    </div>
+</body>
+<!-- FOOTER  -->
+<?php require_once "../component/footer.php"; ?>

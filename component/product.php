@@ -1,20 +1,15 @@
 <style>
-    body{
-    font-family: "Roboto";
-    height: 100vh;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    .prod:hover{
+        outline: 1px solid #0071AF;
+        cursor: pointer;
     }
     .prod{
         display: flex;
-        width: 100%;
         justify-content: center;
         align-items: center;
         border: 1px solid #d8d8d8;
         border-radius: 6px;
-        margin-bottom: 15px;
+        width: 100%;
     }
     .prod-img{
         display: flex;
@@ -27,7 +22,7 @@
     .prod-detail{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 70%;
         padding: 10px;
         color: #505050
     }
@@ -39,7 +34,7 @@
             <img src="../asset/image/prod.jpg" alt="product">
         </div>
         <div class="prod-detail">
-            <span style="font-weight: 600; font-size: 12px; padding: 5px 0; text-overflow: ellipsis;">Nước Uống Chống Say Tàu Xe Donsung (H/30c/30ml)</span>
+            <span style="font-weight: 600; font-size: 12px; padding: 5px 0; max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Nước Uống Chống Say Tàu Xe Donsung (H/30c/30ml) </span>
             <span style="font-weight: 500; font-size: 12px;">Hộp 30 chai x 30ml</span>
             <span style="font-weight: 600; font-size: 16px; color: #0071AF; padding: 5px 0;">99.000đ</span>
         </div>
