@@ -34,6 +34,7 @@ button:hover{
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 1px;
+    max-width: 20%;
 }
 .menu-mid{
     display: flex;
@@ -75,6 +76,7 @@ button:hover{
 }
 .menu-right{
     display: flex;
+    max-width: 20%;
     min-width: max-content;
     justify-content: right;
     margin-right: 20px;
