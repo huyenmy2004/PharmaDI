@@ -37,7 +37,8 @@ button:hover{
 }
 .menu-mid{
     display: flex;
-    width: 65%;
+    width: 900px;
+    max-width: 60%;
     border: 1px solid #d8d8d8;
     color: #d8d8d8;
     border-radius: 6px;

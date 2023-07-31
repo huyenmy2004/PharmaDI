@@ -27,27 +27,29 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            >div {
-                >button {
-                    padding: 5px 15px;
-                    border: 1px solid #D8D8D8;
-                    border-radius: 30px;
-                    background-color: #F9F9F9;
-                    font-size: 14px;
-                    color: #505050;
-                }
-            }
         }
-
+        .delete-all{
+            display: flex;
+            align-items: center;
+            padding: 5px 15px;
+            border: 1px solid #D8D8D8;
+            border-radius: 30px;
+            background-color: #F9F9F9;
+            font-size: 13px;
+            color: #505050;
+            height: 25px;
+        }
         .select-all {
             display: flex;
             align-items: center;
             font-size: 14px;
-
             >span {
-                padding: 0 10px 0
+                padding: 0 0px 0 10px;
+                font-size: 13px;
             }
+        }
+        .check input:checked ~ .checkmark {
+            background-color: red;
         }
 
         .cart-list-prod-list-brand {
@@ -63,6 +65,10 @@
         .cart-list-prod-list {
             display: flex;
             flex-direction: column;
+            padding: 30px;
+            border: 1px solid #D8D8D8;
+            border-radius: 8px;
+            margin-top: 15px;
         }
 
         .cart-list-prod-list-prod {
@@ -94,25 +100,25 @@
         <div class="cart-list-prod">
             <div class="cart-list-prod-title">
                 <span class="title">GIỎ HÀNG</span>
-                <div style="display: flex; ">
-                    <button>Xoá tất cả</button>
+                <div style="display: flex; align-items: center; padding-right: 30px">
+                    <button class="delete-all">Xoá tất cả</button>
                     <div class="select-all">
                         <span>Chọn tất cả</span>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="14" height="14" rx="2.5" stroke="#D8D8D8" />
-                        </svg>
+                        <input type="checkbox">
                     </div>
                 </div>
             </div>
             <div class="cart-list-prod-list">
                 <div class="cart-list-prod-list-brand">
                     <img src="../asset/image/logo.png" alt="brand">
-                    <button>Xoá tất cả</button>
-                    <div class="select-all">
-                        <span>Chọn tất cả</span>
-                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="14" height="14" rx="2.5" stroke="#D8D8D8" />
-                        </svg>
+                    <div style="display: flex; align-items: center">
+                        <button class="delete-all">Xoá tất cả</button>
+                        <div class="select-all">
+                            <span>Chọn tất cả</span>
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="1" width="14" height="14" rx="2.5" stroke="#D8D8D8" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="cart-list-prod-list-prod">
