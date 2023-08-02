@@ -127,9 +127,7 @@
 </head>
 
 <body>
-    a
     <div class="cart">
-        b
         <div class="cart-list-prod">
             <div class="cart-list-prod-title">
                 <span class="title">GIỎ HÀNG</span>
