@@ -14,7 +14,7 @@
     }
 </style>
 <body>
-    <div class="sign-up-bgr     ">
+    <div class="sign-up-bgr hide">
         <div action="" class="sign-in">
             <span style="font-size:28px; color: #0071AF; font-weight: 600; width: max-content; margin:20px 0 20px 0;">ĐĂNG KÝ TÀI KHOẢN</span>
             <div class="sign-in-input">
@@ -62,25 +62,22 @@
         signInPopup.classList.toggle('hide')
     }
     function validateSignUp(){
-        document.getElementById('merchantNoti').textContent = ''
+        document.getElementById('merchantNoti').textContent = '' 
         document.getElementById('phoneNoti').textContent = ''
         document.getElementById('passSignUpNoti').textContent = ''
         document.getElementById('repeatPassNoti').textContent = ''
         document.getElementById('gppNoti').textContent = ''
-        if(document.getElementById('merchant').value == ''){
-            document.getElementById('merchantNoti').textContent = 'Vui lòng nhập tên nhà thuốc'
-        }
-        if(document.getElementById('phone').value == ''){
-            document.getElementById('phoneNoti').textContent = 'Vui lòng nhập số điện thoại'
-        }
-        if(document.getElementById('passSignUp').value == ''){
-            document.getElementById('passSignUpNoti').textContent = 'Vui lòng nhập mật khẩu'
-        }
+        // if(document.getElementById('merchant').value == ''){
+        //     document.getElementById('merchantNoti').textContent = 'Vui lòng nhập tên nhà thuốc'
+        // }
+        // if(document.getElementById('phone').value == ''){
+        //     document.getElementById('phoneNoti').textContent = 'Vui lòng nhập số điện thoại'
+        // }
+        // if(document.getElementById('passSignUp').value == ''){
+        //     document.getElementById('passSignUpNoti').textContent = 'Vui lòng nhập mật khẩu'
+        // }
         if(document.getElementById('repeatPass').value == ''){
-            document.getElementById('repeatPassNoti').textContent = 'Vui lòng nhập lại mật khẩu'
-        }
-        if(document.getElementById('GPP').value == ''){
-            document.getElementById('gppNoti').textContent = 'Vui lòng nhập số giấy phép GPP'
+            document.getElementById('repeatPassNoti').textContent = 'Mật khẩu nhập lại không đúng'
         }
         if(!/^[A-Za-z0-9][^'!@#$%^&*()]{6,}$/.test(document.getElementById('merchant').value)){
             document.getElementById('merchantNoti').innerHTML = 'Tên nhà thuốc không hợp lệ'
@@ -93,6 +90,9 @@
         }
         if(document.getElementById('passSignUp').value != document.getElementById('repeatPass').value){
             document.getElementById('repeatPassNoti').innerHTML = 'Mật khẩu nhập lại không đúng'
+        }
+        if(!/^[0-9][^'!@#$%^&*()A-Za-z]{9,20}$/.test(document.getElementById('GPP').value)){
+            document.getElementById('gppNoti').innerHTML = 'Số GPP không hợp lệ'
         }
     }
     function showPass(id, eyeId){
