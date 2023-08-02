@@ -1,5 +1,6 @@
 <!-- MENU  -->
-<?php require "../component/header.php"; ?>
+<?php require "../component/header-guest.php"; ?>
+<?php require "../component/product.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +48,9 @@
         }
         .prod-image {
             display: flex;
-            width: 60%;
+            justify-content: center;
+            overflow: hidden;
+            max-width: 40%;
             height: max-content;
             >img {
                 width: 400px;
@@ -78,7 +81,7 @@
         .prod-detail {
             display: flex;
             flex-direction: column;
-            width: 40%;
+            padding: 10px;
         }
         .prod-cate {
             padding: 5px 10px;
@@ -98,6 +101,7 @@
         .price-orgin{
             font-size: 12px;
             text-decoration: line-through;
+            color:#505050;
         }
         .plus-number{
             display: flex;
@@ -220,15 +224,14 @@
     </div>
     <div class="home-sale">
         <div class="home-sale-left">
-            <span style="position: absolute; color: white; top: 35px; left: 10px; font-weight: 500; z-index: 1; font-size: 18px; ">GIẢM GIÁ MẠNH</span>
+            <span style="background-color: #BA0122; height: 22px; width: 90px; position: absolute; top: 24.5px; left: -1px; color: white; padding: 10px; font-size: 17px">BÁN CHẠY</span>
             <div style="position: absolute; left: -10px">
                 <svg width="10" height="62" viewBox="0 0 12 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 58.0056C2.54174 60.4649 6.60001 62.3737 11.461 63.3333V44.0115H2.60662C1.61954 44.6275 0.744681 45.3008 0 46.0213V58.0056Z" fill="#505050"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 44.0115H11.461V50.0458C11.1904 50.024 10.9175 50.013 10.6424 50.013C6.09323 50.013 2.12186 53.0354 0 57.5264V44.0115Z" fill="#BA0122"/>
                 <path d="M0 8C0 3.58172 3.58172 0 8 0H12V45H0V8Z" fill="#BA0122"/>
                 </svg>
-                <div style="background-color: #BA0122; height: 41.5px; width: 160px; position: absolute; top: 4.5px; left: 9px"></div>
-                <svg width="20.5" height="49.2" viewBox="0 0 25 53" fill="none" xmlns="http://www.w3.org/2000/svg" style=" position: absolute; top: 1px; left: 168px">
+                <svg width="20.5" height="49.2" viewBox="0 0 25 53" fill="none" xmlns="http://www.w3.org/2000/svg" style=" position: absolute; top: 1px; left: 118.5px">
                 <path d="M25 26.5L0.25 52.0477L0.250004 0.952251L25 26.5Z" fill="#BA0122"/>
                 </svg>
             </div>
@@ -238,11 +241,10 @@
             <div class="prod-info">
                 <div class="prod-detail">
                     <span style="font-size: 12px; padding: 5px 0; color: #505050">Dạng thuốc tiêm</span>
-                    <span style="font-size: 20px; padding: 5px 0; font-weight: 600; color: #505050">Lipitor 20mg Nén Pfizer (H/30v)</span>
+                    <span style="font-size: 18px; padding: 5px 0; font-weight: 600; color: #505050">Lipitor 20mg Nén Pfizer (H/30v)Pfizer (H/30v)Pfizer (H/30v)</span>
                     <span style="font-size: 12px; padding-bottom: 5px; color: #505050">Hộp 3 vỉ x 10 viên nén bao phim</span>
                     <span style="font-size: 12px; padding-bottom: 5px; color: #505050">Quốc gia: Pháp</span>
                     <span class="prod-cate">Máu, Huyết Học</span>
-                    <span style="font-size: 12px; padding-bottom: 5px; color: #BABABA; font-style: italic">Lưu ý: Giá háp dụng với số lượng sản phẩm giới hạn</span>
                     <div class="prod-price">
                         <span class="price-sale">400.000đ</span>
                         <span class="price-orgin">473.300đ</span>
@@ -277,8 +279,17 @@
         </div>
         <div class="home-sale-right">
             <div class="title-lowercase">Sản phẩm bán chạy</div>
-            <div class="home-sale-right-prod hidden-scroll">
-                <?php require "../component/product.php"; ?>
+                <div class="home-sale-right-prod hidden-scroll">
+                    <div class="prod">
+                        <div class="prod-img">
+                            <img src="../asset/image/prod.jpg" alt="product">
+                        </div>
+                        <div class="product-detail">
+                            <span style="font-weight: 600; font-size: 12px; padding: 5px 0; max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Nước Uống Chống Say Tàu Xe Donsung (H/30c/30ml) </span>
+                            <span style="font-weight: 500; font-size: 12px;">Hộp 30 chai x 30ml</span>
+                            <span style="font-weight: 600; font-size: 16px; color: #0071AF; padding: 5px 0;">99.000đ</span>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -286,25 +297,16 @@
         <div class="title">SẢN PHẨM MỚI</div>
         <div class="home-product">
             <div class="product">
-                <?php require "../component/product.php"; ?>
-            </div>
-            <div class="product">
-                <?php require "../component/product.php"; ?>
-            </div>
-            <div class="product">
-                <?php require "../component/product.php"; ?>
-            </div>
-            <div class="product">
-                <?php require "../component/product.php"; ?>
-            </div>
-            <div class="product">
-                <?php require "../component/product.php"; ?>
-            </div>
-            <div class="product">
-                <?php require "../component/product.php"; ?>
-            </div>
-            <div class="product">
-                <?php require "../component/product.php"; ?>
+                <div class="prod">
+                    <div class="prod-img">
+                        <img src="../asset/image/prod.jpg" alt="product">
+                    </div>
+                    <div class="product-detail">
+                        <span style="font-weight: 600; font-size: 12px; padding: 5px 0; max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Nước Uống Chống Say Tàu Xe Donsung (H/30c/30ml) </span>
+                        <span style="font-weight: 500; font-size: 12px;">Hộp 30 chai x 30ml</span>
+                        <span style="font-weight: 600; font-size: 16px; color: #0071AF; padding: 5px 0;">99.000đ</span>
+                    </div>
+                </div>
             </div>
         </div>
         <button class="show-more" onclick="" style="font-style: normal; font-weight: 600; font-size: 14px;">
@@ -357,9 +359,10 @@
             setTimeout(function(){
                 signInPopup.classList.toggle('slow-motion');
                 signInPopup.classList.toggle('hide')
-            }, 900) 
+            }, 400) 
         }
     });
+
     // POPUP SIGN UP
     var signUpButton = document.querySelector('#sign-up');
     var signUpPopup = document.querySelector('.sign-up-bgr');
@@ -374,7 +377,7 @@
             setTimeout(function(){
                 signUpPopup.classList.toggle('slow-motion');
                 signUpPopup.classList.toggle('hide')
-            }, 900) 
+            }, 400) 
         }
     });
 </script>

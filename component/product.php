@@ -19,25 +19,25 @@
             width: 100%;
         }
     }
-    .prod-detail{
+    .product-detail{
         display: flex;
         flex-direction: column;
         width: 70%;
         padding: 10px;
-        color: #505050
+        color: #505050;
     }
 </style>
-</head>
+<!-- </head>
 <body>
     <div class="prod">
         <div class="prod-img">
             <img src="../asset/image/prod.jpg" alt="product">
         </div>
-        <div class="prod-detail">
+        <div class="product-detail">
             <span style="font-weight: 600; font-size: 12px; padding: 5px 0; max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Nước Uống Chống Say Tàu Xe Donsung (H/30c/30ml) </span>
             <span style="font-weight: 500; font-size: 12px;">Hộp 30 chai x 30ml</span>
             <span style="font-weight: 600; font-size: 16px; color: #0071AF; padding: 5px 0;">99.000đ</span>
         </div>
     </div>
 </body>
-</html>
+</html> -->
