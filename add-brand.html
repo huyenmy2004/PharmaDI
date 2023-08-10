@@ -7,16 +7,27 @@
     <title>Add New Brand</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Add New Brand</h1>
+    <div class="label-add-brand">
+        <h1>Thêm thương hiệu mới</h1>
         <form id="add-brand-form">
-            <label for="brand-name">Brand Name:</label>
-            <input type="text" id="brand-name" required>
+            <div class="brand-name">
+                <label for="label-brand-name">Tên thương hiệu</label>
+                <input type="text" name="input-brand" class="input-brand" placeholder="Nhập tên thương hiệu" required>
+            </div>
+            <div class="brand-logo">
+                <label for="label-brand-logo">Logo</label>
+                <input type="text" name="input-logo" class="input-logo" placeholder="Đính kèm logo" required>
+            </div>
+            <div class="brand-descript">
+                <label for="label-brand-descript">Mô tả</label>
+                <textarea id="input-brand-descript" rows="4" placeholder="Nhập mô tả" required></textarea>
 
-            <label for="brand-description">Brand Description:</label>
-            <textarea id="brand-description" rows="4" required></textarea>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btn-cancel">Hủy bỏ</button>
+                <button type="submit" class="btn-create">Thêm mới</button>
+            </div>
 
-            <button type="submit">Add Brand</button>
         </form>
     </div>
 
